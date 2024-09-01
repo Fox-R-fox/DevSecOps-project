@@ -53,7 +53,15 @@
     newgrp docker
     sudo chmod 777 /var/run/docker.sock
     ```
-    
+    Install yarn 
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    sudo apt update
+    sudo apt install yarn
+    yarn install
+
+
+
 - Build and run your application using Docker containers:
     
     ```bash
